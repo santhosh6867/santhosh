@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            height: 100vh;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 3.5rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        header img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 20px;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        section:nth-child(even) {
+            background-color: #f4f4f4;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            color: #ff7e5f;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        .skills {
+            background: #feb47b;
+            color: white;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills ul li {
+            background: #ff7e5f;
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .project .content {
+            padding: 15px;
+        }
+        .project h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+            color: #ff7e5f;
+        }
+        .experience {
+            background: #feb47b;
+            color: white;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image.png" alt="Your Picture">
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" style="background-color: #ffe4e1;">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with a knack for crafting beautiful and functional websites. My goal is to turn ideas into reality through innovative designs and efficient code.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Java</li>
+                <li>C</li>
+            </ul>
+        </section>
+        <section id="projects" style="background-color: #e0f7fa; padding: 50px 0;">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #00796b; margin-bottom: 20px;">Projects</h2>
+            <div style="max-width: 1100px; margin: 0 auto;">
+                <!-- Project 1 -->
+                <div style="margin-bottom: 30px; text-align: center;">
+                    <h3 style="font-size: 1.8rem; color: #00796b; margin-bottom: 10px;">SOCIAL MEDIA APP</h3>
+                    <p style="font-size: 1rem; color: #555; margin-bottom: 15px;">The social media app encompasses features such as intuitive course creation, seamless content delivery, fostering an engaging
+                        and interactive learning environment Ensured a responsive, user-friendly interface for an optimal viewing experience.
+                        Ensured a responsive, user-friendly interface for an optimal viewing experience.
+                        </p>
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: white; max-width: 300px; margin: 0 auto;">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 1" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+        
+                <!-- Project 2 -->
+                <div style="margin-bottom: 30px; text-align: center;">
+                    <h3 style="font-size: 1.8rem; color: #00796b; margin-bottom: 10px;">RECIPE MANAGEMENT SYSTEM</h3>
+                    <p style="font-size: 1rem; color: #555; margin-bottom: 15px;">Build a comprehensive online learning system using MERN stack. aims to provide a seamless and efficient learning
+                        experience for students, instructors & an effective management tools for administrators. Users can add, share, modify, or
+                        delete recipe details such as ingredients and food.</p>
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: white; max-width: 300px; margin: 0 auto;">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 2" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+        
+                <!-- Project 3 -->
+                <div style="margin-bottom: 30px; text-align: center;">
+                    <h3 style="font-size: 1.8rem; color: #00796b; margin-bottom: 10px;">ACCIDENT ALERT SYSTEM</h3>
+                    <p style="font-size: 1rem; color: #555; margin-bottom: 15px;">An accident alert system using GPS and GSM is designed to automatically detect when an accident has occurred and send
+                        alerts to emergency contacts or authorities, providing them with the precise location of the incident. This system leverages
+                        GPS for location tracking and GSM for communication.</p>
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background-color: white; max-width: 300px; margin: 0 auto;">
+                        <img src="https://via.placeholder.com/300x200" alt="Project 3" style="width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+
+        <section id="experience" class="experience" style="background-color: #feb47b; color: white; text-align: center; padding: 50px 0;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Experience</h2>
+            <p style="font-size: 1.1rem; margin-top: 10px; color: yellow;">Solved 150+ programs in LeetCode</p>
+            <p style="font-size: 1.1rem; margin-top: 10px; color: yellow;">Solved 250+ programs in CodeChef</p>
+            <p style="font-size: 1.1rem; margin-top: 10px; color: yellow;">Solved 200+ programs in SkillRack</p>
+        </section>
+        
+        
+    </div>
+
+    <section id="contact" style="background-color: #e8f5e9; padding: 50px 0; text-align: center;">
+        <h2 style="color: #388e3c; font-size: 2.5rem; margin-bottom: 20px;">Contact Me</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 30px;">
+            Feel free to reach out to me for collaborations or just a friendly hello!
+        </p>
+        <form style="max-width: 600px; margin: 0 auto; text-align: left;">
+            <div style="margin-bottom: 15px;">
+                <label for="name" style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" 
+                       style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="email" style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" 
+                       style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <label for="message" style="display: block; margin-bottom: 5px; font-size: 1.1rem;">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" 
+                          style="width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            </div>
+            <button type="submit" 
+                    style="background-color: #388e3c; color: white; padding: 10px 20px; font-size: 1.2rem; border: none; border-radius: 5px; cursor: pointer;">
+                Send Message
+            </button>
+        </form>
+    </section>
+    
+</body>
+</html>
